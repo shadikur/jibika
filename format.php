@@ -1,0 +1,54 @@
+<?php
+$text = str_replace('$','$$',$text);
+$text = str_replace('<','',$text);
+$text = str_replace('>','',$text);
+$text = preg_replace("/\[b\](.*?)\[\/b\]/i","<b>\\1</b>", $text);
+$text = preg_replace("/\[i\](.*?)\[\/i\]/i","<i>\\1</i>", $text);
+$text = preg_replace("/\[u\](.*?)\[\/u\]/i","<u>\\1</u>", $text);
+$text = preg_replace("/\[big\](.*?)\[\/big\]/i","<big>\\1</big>", $text);
+$text = preg_replace("/\[small\](.*?)\[\/small\]/i","<small>\\1</small>", $text);
+$text = preg_replace("/\[url\=(.*?)\](.*?)\[\/url\]/is","<a href=\"$1\">$2</a>",$text);
+$text = str_replace("[br/]","<br/>",$text);
+$text = str_replace("@user","".ucwords($SbdUser)."",$text);
+$text = str_replace("[site]","$Site",$text);
+
+// filters
+$text = str_replace('fuck','f**k',$text);
+$text = str_replace('suck','s**k',$text);
+$text = str_replace('chod','***',$text);
+$text = str_replace('dhakawap','',$text);
+$text = str_replace('bondhushova','',$text);
+$text = str_replace('dbangla','',$text);
+$text = str_replace('bdforum','',$text);
+$text = str_replace('rexbd','',$text);
+$text = str_replace('wapforum','',$text);
+$text = str_replace('wapdesire','',$text);
+$text = str_replace('chuda','',$text);
+$text = str_replace('cuda','',$text);
+$text = str_replace('chudi','',$text);
+$text = str_replace('cudi','',$text);
+$text = str_replace('coda','',$text);
+$text = str_replace('c0da','',$text);
+$text = str_replace('fuck','',$text);
+$text = str_replace('fuk','',$text);
+$text = str_replace('voda','',$text);
+$text = str_replace('v0da','',$text);
+$text = str_replace('boda','',$text);
+$text = str_replace('b0da','',$text);
+$text = str_replace('admin','',$text);
+$text = str_replace('khanki','',$text);
+$text = str_replace('magi','',$text);
+$text = str_replace('maagi','',$text);
+$text = str_replace("dick","d**k",$text);
+$text = str_replace("pussy","p**y",$text);
+$text = str_replace("cunt","c**t",$text);
+$text = str_replace("cock","c**k",$text);
+$text = str_replace("slut","s**t",$text);
+$text = str_replace("faggot","f**t",$text);
+$text = str_replace("wanker","w**r",$text);
+$text = str_replace("prick","p**k",$text);
+$text = str_replace("bastard","b**d",$text);
+$text = str_replace("bitch","b**h",$text);
+$text = str_replace("chud","***",$text);
+$text = str_replace("voda","***",$text);
+?>
